@@ -1,0 +1,50 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    tools:context="com.example.grey_hat.actionbar.HomeFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/openingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Silicon Valley"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="50sp"/>
+
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/Trailer"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_below="@+id/openingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ScrollView
+        android:layout_below="@+id/Trailer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:id="@+id/welcomeDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Trailer"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:fontFamily="cursive"
+        android:text="" />
+</ScrollView>
+</RelativeLayout>
+
+

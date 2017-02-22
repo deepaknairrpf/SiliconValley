@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    >
+<FrameLayout
+    android:background="@drawable/wallp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainFrag">
+</FrameLayout>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainImg"/>
+    <RelativeLayout
+        android:id="@+id/linList"
+        android:layout_width="190dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        >
+        <ImageView
+            android:id="@+id/gilfoyle"
+            android:layout_height="110dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/gilfoyle" />
+    <ListView
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ACACAC"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:paddingStart="40dp"
+        android:id="@+id/drawer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+       android:layout_margin="0dp"
+        android:background="#ACACAC"
+        android:layout_below="@+id/gilfoyle">
+    </ListView>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

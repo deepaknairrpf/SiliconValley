@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5DBDB"
+    tools:context="com.example.grey_hat.actionbar.seriesCharacterFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/welcomeLin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#D5DBDB"
+        android:padding="10dp"
+        android:gravity="center">
+    <TextView
+        android:id="@+id/pizText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeekyVille !!"
+        android:fontFamily="cursive"
+        android:textSize="30sp"
+        android:textColor="#1E3EC1"/>
+    <TextView
+        android:id="@+id/bestMoments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favorites .."
+        android:textColor="#1E3EC1"
+        android:fontFamily="cursive"
+        android:textSize="32sp"/>
+    </LinearLayout>
+<ListView
+    android:background="#FFFFFF"
+    android:layout_marginTop="10dp"
+    android:id="@+id/PizList"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/welcomeLin">
+
+</ListView>
+</RelativeLayout>
